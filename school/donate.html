@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content=" ">
+	<meta name="keywords" content="School">
+	<title>School</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css">
+	<link rel="stylesheet" href="css/style.css">
+ 	<!-- CSS -->
+	
+ 	
+</head>
+<body class="no-bg" >
+
+
+<div class="donate-page">
+	<div class="left">
+		<div class="slider">
+			<div class="slide">
+				<p>100% of proceeds to Parkholme School, for children with learning disabilities, including Autism</p>
+				<img src="img/bike-old.png" alt="">
+			</div>
+			<div class="slide">
+				<p>100% of proceeds to Parkholme School, for children with learning disabilities, including Autism</p>
+				<img src="img/bike-old.png" alt="">
+			</div>			
+		</div>
+	</div>
+	<div class="right">
+		<form action="" class="form-donate">
+			<div class="step-1 step">
+				<div class="header-step">
+					<div class="h2">1 Step</div>
+					<div class="h3">How much money do you want donate?</div>
+				</div>
+				<div class="wrap-content">
+					<div class="form-group">
+						<input type="text" id="range">
+					</div>
+					<div class="form-group">
+						<label for="">First and Last Name </label>
+						<input type="text" placeholder="Full name">
+					</div>	
+					<div class="form-group">
+						<label for="">E-mail</label>
+						<input type="text" placeholder="Your E-mail Adress">
+					</div>	
+					<div class="form-group">
+						<label for="">Phone</label>
+						<input type="text" placeholder="+x xxx xxx xxx">
+					</div>
+					<a href="" class="next button">
+						I would like to donate <span class="donat">100</span> $
+					</a>
+				</div>
+			</div>
+			<div class="step-2 step">
+				<div class="header-step">
+					<div class="h2">2 Step</div>
+					<div class="h3">Card Details</div>
+				</div>
+				<div class="wrap-content">
+					<div class="form-group">
+						<label for="">Card Holder’s Name:</label>
+						<input type="text" placeholder="Card Holder’s Name:" >
+					</div>
+					<div class="form-group">
+						<label for="">Card Number: </label>
+						<input type="text" placeholder="xxxx-xxxx-xxxx-xxxx">
+					</div>	
+					<div class="form-group">
+						<label for="">Data expires:</label>
+						<div class="wrap-select">
+							<select class="select">
+								<option value="">Month</option>
+								<option value="">Month</option>
+								<option value="">Month</option>
+							</select>
+							<select class="select">
+								<option value="">Year</option>
+								<option value="">2017</option>
+								<option value="">2016</option>
+							</select>							
+						</div>
+					</div>	
+					<div class="form-group">
+						<label for="">SCV Number:</label>
+						<div class="wrap">
+							<div class="left">
+								<input type="text">
+							</div>
+							<ul>
+								<li><a href=""><img src="img/card-1.png" alt=""></a></li>
+								<li><a href=""><img src="img/card-2.png" alt=""></a></li>
+								<li><div class="info">?</div></li>
+							</ul>
+						</div>
+					</div>
+					<button class="button">
+						I would like to donate <span class="donat">100</span> $
+					</button>
+				</div>
+			</div>			
+		</form>
+	</div>
+</div>
+ 
+ 
+ 
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.min.js"></script> 
+<script src="js/ion.rangeSlider.min.js"></script>
+ 
+<!-- Utility Scripts -->
+<script src="js/modernizr.min.js"></script>
+ 
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.nice-select.min.js"></script>
+<script src="fancybox/jquery.fancybox.pack.min.js"></script> 
+<script src="js/scripts.js"></script>
+
+<script>
+	var $donat = $(".donat");
+	$("#range").ionRangeSlider({
+		min: 0,
+		max: 1000,
+		from: 100,
+		postfix: "$",
+		onChange: function(data) {
+			$donat.text(data.from);
+		}
+	});
+	
+ 
+</script>
+ 
+<!-- endbuild -->
+</body>
+</html>
