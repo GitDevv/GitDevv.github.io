@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="51" height="33" viewBox="0 0 51 33">
+    <defs>
+        <rect id="a" width="728" height="604" x="166" y="3109" rx="3"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#F2F5F7" d="M-544-3436H896V914H-544z"/>
+        <g transform="translate(-544 -3533)">
+            <use fill="#FFF" xlink:href="#a"/>
+            <rect width="727" height="603" x="166.5" y="3109.5" stroke="#D1DDE4" rx="3"/>
+        </g>
+        <g>
+            <rect width="51" height="33" fill="#D1DCE4" rx="3"/>
+            <path fill="#829CA9" d="M0 6h51v7H0z" opacity=".5"/>
+            <text fill="#FFF" font-family="MaisonNeue-Bold, Maison Neue" font-size="14" font-weight="bold">
+                <tspan x="24" y="27">123</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
