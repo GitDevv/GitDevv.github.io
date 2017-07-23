@@ -1,0 +1,124 @@
+/* ########################################
+   #                styles                #
+   ######################################## */
+
+body 
+{
+    background: url(../img/bg_main.jpg) no-repeat top center fixed;
+    background-size:100% auto;
+    -webkit-background-size: cover;
+    -o-background-size:cover;
+    -moz-background-size:cover;
+    background-size: cover;
+}
+
+.form-signin
+{
+    max-width: 330px;
+    margin: 0 auto;
+    padding: 20px 0px;
+}
+
+.form-signin .form-control
+{
+    height: auto;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.form-signin input[type="text"],
+.form-signin input[type="password"]
+{
+    padding: 15px 0px;
+    border: none;
+    border-bottom: solid 2px #e8e8e8;
+    box-shadow: none;
+}
+
+.form-signin input[type="password"]
+{
+    margin-bottom: 20px;
+    border-bottom: none;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder
+{
+    color:#484848;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-moz-placeholder          
+{
+    color:#484848;
+}/* Firefox 19+ */
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]:-moz-placeholder           
+{
+    color:#484848;
+}/* Firefox 18- */
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]:-ms-input-placeholder
+{
+    color: #484848;
+}
+
+.account-wall
+{
+    height: 500px;
+    width: 370px;
+    margin-top: 150px;
+    padding: 27px 0px 25px 0px;
+    background-color: #fff;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-img
+{
+    width: 96px;
+    height: 136px;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.btn-signin,
+.btn-signin-facebook{
+    color: #fff;
+    border-radius: 0;
+}
+.btn-signin
+{
+    background-color: #0096d5;
+}
+
+.btn-signin-facebook{
+    background-color: #015287;
+}
+
+.forgot-pass
+{   
+    margin-top: 42px;
+    margin-left: 7px;
+    color:#0392d4;
+    text-decoration: underline;
+}
+
+/* ########################################
+   #    override the bootstrap configs    #
+   ######################################## */
+
+.btn-block + .btn-block {
+    margin-top: 12px;
+}
+
+
+@media ( max-width:440px ){
+    .account-wall{
+    width: 100%;
+}
+.form-signin {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}    
