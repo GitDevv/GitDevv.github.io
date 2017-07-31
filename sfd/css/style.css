@@ -340,6 +340,7 @@ background-color: #ff585b;
 	opacity: 0.2;	
 	line-height: 34px;
 	text-align: center;
+	font-family: beb;
 }
 .card-block input:checked + .check {
 	opacity: 1;
