@@ -863,16 +863,55 @@ body .catalog .icon1:before {
 @media (max-width: 1440px) {
   .catalog-item {
     width: 50%; }
+/*
   .main-item {
     width: 50%; }
+*/
+/*
     .main-item:last-child {
       width: 100%; }
+*/
   .gallery-item {
     width: 50%; }
   .post-txt-str {
     font-size: 15px;
     line-height: 1.6; } }
 
+@media (max-width: 1480px) {
+	.main-list{
+		font-size: 32px;
+	}	
+	.main-item-title{
+		font-size: 46px;
+	}
+	.main-item{
+		padding: 40px 30px;
+	}
+	.main-item{
+		background-position: center left;
+	}
+	.title-news-txt p{line-height: 1.5;}
+	.item-company-txt{
+		line-height: 1.5;
+	}
+	.main-item:last-child{
+		padding: 30px 20px;
+	}	
+	.main-item-title{
+		font-size: 34px;
+		margin-bottom: 20px;
+	}
+	.item-sale-title{
+		font-size: 40px;
+	}
+	.title-news-all{
+		top: 45px;
+	}
+	.sidebar{
+		overflow-x: hidden;
+	}
+
+}
 @media (max-width: 1280px) {
   .navigation-item-meth {
     font-size: 17px;
