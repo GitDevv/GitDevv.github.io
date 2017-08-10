@@ -634,9 +634,8 @@
       -ms-flex-line-pack: center;
           align-content: center; }
   .advantages-item {
-    width: -webkit-calc(33.333% - 20px);
-    width: calc(33.333% - 20px);
-    min-width: 270px; }
+    width: 100%;
+    max-width: 370px; }
     .advantages-item-title, .license-title {
       text-decoration: none;
       text-transform: uppercase;
@@ -654,6 +653,7 @@
     padding-left: 85px;
     color: #fff; }
   .advantages-img, .News-img {
+    display: block;
     width: 100%;
     height: 270px;
     -webkit-border-radius: 10px;
@@ -737,7 +737,7 @@
       top: 125px;
       bottom: 0;
       left: 0;
-      background-position: 0 0;
+      background-position: center top;
       background-repeat: no-repeat;
       -webkit-background-size: cover;
               background-size: cover;
@@ -1057,7 +1057,12 @@
             border-radius: 10em;
     font: 100% "PNSemibold", sans-serif;
     font-size: 20px;
-    margin-right: 27px; }
+    margin-right: 27px;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear; }
+    .News-tab li:hover {
+      border-color: #FFE726; }
     .News-tab li.active {
       border-color: #ffd105; }
       .News-tab li.active a {
@@ -1089,6 +1094,8 @@
           justify-content: space-between; }
 
 .News-img {
+  display: block;
+  color: #000;
   background-color: #000;
   position: relative; }
   .News-img-icon {
@@ -1117,7 +1124,12 @@
             border-radius: 10em;
     font: 100% "PNSemibold", sans-serif;
     font-size: 20px;
-    margin: 0 9px; }
+    margin: 0 9px;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear; }
+    .pagination-item:hover {
+      border-color: #FFE726; }
     .pagination-item.pre-last {
       margin: 0 0;
       border: none;
@@ -1174,6 +1186,7 @@
     margin-bottom: 60px;
     padding: 0 15px; }
     .Services-item-icon {
+      display: block;
       width: 70px;
       height: 70px;
       background: #ffd105;
@@ -1182,6 +1195,10 @@
       margin: 0 auto;
       margin-bottom: 25px;
       position: relative; }
+      .Services-item-icon:hover {
+        background-color: #FFE816; }
+      .Services-item-icon:active {
+        background: #EFC201; }
       .Services-item-icon.S-icon2::after {
         width: 36px;
         height: 48px;
@@ -1250,7 +1267,12 @@
     border-bottom: 1px solid #dbdbdb;
     width: 100%;
     border-left: 1px solid #dbdbdb;
-    border-right: 1px solid #dbdbdb; }
+    border-right: 1px solid #dbdbdb;
+    -webkit-transition: .2s linear;
+    -o-transition: .2s linear;
+    transition: .2s linear; }
+    .sidebar-item:hover {
+      padding-left: 15px; }
     .sidebar-item.active {
       border: 2px solid #ffd105; }
       .sidebar-item.active a {
@@ -1525,6 +1547,13 @@ tr td:last-child {
     font-size: 15px; }
   .advantages-item-txt {
     font-size: 14px; }
+  .advantages {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .advantages-item {
+      margin-right: 15px;
+      margin-bottom: 35px; }
   .work-item-info span {
     font-size: 16px; }
   .work {
@@ -1540,8 +1569,6 @@ tr td:last-child {
       min-width: 215px; }
   .work-item-img {
     width: 215px; }
-  .advantages-item {
-    width: 240px; }
   .advantages-txt {
     padding-left: 25px;
     padding-top: 20px; }
@@ -1618,9 +1645,6 @@ tr td:last-child {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
-  .advantages-item {
-    width: 360px;
-    margin-bottom: 35px; }
   .work {
     -webkit-flex-wrap: nowrap;
         -ms-flex-wrap: nowrap;
@@ -1778,6 +1802,8 @@ tr td:last-child {
   .advantages {
     padding-top: 25px;
     padding-bottom: 25px; }
+    .advantages-item {
+      margin-right: 0; }
   .section-work {
     padding-top: 40px; }
   .section-work .container-title {
@@ -1949,8 +1975,6 @@ tr td:last-child {
     font-size: 14px; }
   .advantages-img, .News-img {
     height: 200px; }
-  .advantages-item {
-    width: 300px; }
   .advantages-item-title, .license-title {
     font-size: 14px; }
   .advantages-item-txt {
