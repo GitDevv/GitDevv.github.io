@@ -66,7 +66,7 @@
     font-size: 24px;
     text-transform: uppercase;
     margin-bottom: 40px; }
-  .container-txt {
+  .section-advantages .container p {
     text-align: center;
     color: #737373;
     font-size: 15px; }
@@ -606,7 +606,7 @@
   text-align: center;
   margin-bottom: 20px; }
 
-.section-advantages .container-txt {
+.section-advantages .container p {
   color: #fff; }
 
 .advantages {
@@ -1183,31 +1183,31 @@
     max-width: 290px;
     margin-bottom: 60px;
     padding: 0 15px; }
-    .Services-item:nth-child(2) .Services-item-icon::after {
+    .Services-item:nth-child(2) > a::after {
       width: 36px;
       height: 48px;
       background-position: -42px 3px; }
-    .Services-item:nth-child(3) .Services-item-icon::after {
+    .Services-item:nth-child(3) > a::after {
       width: 39px;
       height: 46px;
       background-position: -78px 2px; }
-    .Services-item:nth-child(4) .Services-item-icon::after {
+    .Services-item:nth-child(4) > a::after {
       width: 41px;
       height: 37px;
       background-position: -117px 2px; }
-    .Services-item:nth-child(5) .Services-item-icon::after {
+    .Services-item:nth-child(5) a::after {
       width: 36px;
       height: 48px;
       background-position: -42px 3px; }
-    .Services-item:nth-child(6) .Services-item-icon::after {
+    .Services-item:nth-child(6) > a::after {
       width: 39px;
       height: 41px;
       background-position: -158px 0; }
-    .Services-item:nth-child(7) .Services-item-icon::after {
+    .Services-item:nth-child(7) > a::after {
       width: 43px;
       height: 29px;
       background-position: -197px 0; }
-    .Services-item-icon {
+    .Services-item > a {
       display: block;
       width: 70px;
       height: 70px;
@@ -1217,7 +1217,7 @@
       margin: 0 auto;
       margin-bottom: 25px;
       position: relative; }
-      .Services-item-icon::after {
+      .Services-item > a::after {
         content: " ";
         position: absolute;
         top: 50%;
@@ -1230,11 +1230,11 @@
         background-image: url("../img/services-sprite.png");
         background-repeat: no-repeat;
         background-position: 0 0; }
-      .Services-item-icon:hover {
+      .Services-item > a:hover {
         background-color: #FFE816; }
-      .Services-item-icon:active {
+      .Services-item > a:active {
         background: #EFC201; }
-  .Services-txt-title {
+  .Services-txt a {
     font: 100% "PNBold", sans-serif;
     font-size: 18px;
     color: #000;
@@ -1243,9 +1243,9 @@
     padding: 0 40px;
     display: block;
     width: 100%; }
-    .Services-txt-title:hover {
+    .Services-txt a:hover {
       text-decoration: underline; }
-  .Services-txt-desc {
+  .Services-txt p {
     font: 100% "PNRegular", sans-serif;
     font-size: 15px;
     margin-top: 10px;
@@ -1502,7 +1502,7 @@ tr td:last-child {
     padding: 0 10px; }
   .container-title {
     font-size: 21px; }
-  .container-txt {
+  .section-advantages .container p {
     font-size: 14px; }
   .services-top-txt p {
     font-size: 14px;
@@ -1855,9 +1855,9 @@ tr td:last-child {
       height: 8px; }
   .pagination-item.pre-last {
     width: 35px; }
-  .Services-txt-title {
+  .Services-txt a {
     font-size: 15px; }
-  .Services-txt-desc {
+  .Services-txt p {
     font-size: 13px; }
   .Services {
     padding-top: 50px; }
@@ -1969,7 +1969,7 @@ tr td:last-child {
     font-size: 17px; }
   .services-top-txt p {
     font-size: 12px; }
-  .container-txt {
+  .section-advantages .container p {
     font-size: 12px; }
   .serviceL-item-str {
     font-size: 14px; }
