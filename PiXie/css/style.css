@@ -1,0 +1,798 @@
+/* font-family: "HelveticaRegular"; */
+@font-face {
+    font-family: "HelveticaRegular";
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot");
+    src: url("../fonts/HelveticaRegular/HelveticaRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.woff") format("woff"),
+    url("../fonts/HelveticaRegular/HelveticaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaBold"; */
+@font-face {
+    font-family: "HelveticaBold";
+    src: url("../fonts/HelveticaBold/HelveticaBold.eot");
+    src: url("../fonts/HelveticaBold/HelveticaBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaBold/HelveticaBold.woff") format("woff"),
+    url("../fonts/HelveticaBold/HelveticaBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* font-family: "HelveticaLight"; */
+@font-face {
+    font-family: "HelveticaLight";
+    src: url("../fonts/HelveticaLight/HelveticaLight.eot");
+    src: url("../fonts/HelveticaLight/HelveticaLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaLight/HelveticaLight.woff") format("woff"),
+    url("../fonts/HelveticaLight/HelveticaLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaBlack"; */
+@font-face {
+    font-family: "HelveticaBlack";
+    src: url("../fonts/HelveticaBlack/HelveticaBlack.eot");
+    src: url("../fonts/HelveticaBlack/HelveticaBlack.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaBlack/HelveticaBlack.woff") format("woff"),
+    url("../fonts/HelveticaBlack/HelveticaBlack.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "HelveticaMedium";
+    src: url("../fonts/HelveticaMedium/HelveticaMedium.eot");
+    src: url("../fonts/HelveticaMedium/HelveticaMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaMedium/HelveticaMedium.woff") format("woff"),
+    url("../fonts/HelveticaMedium/HelveticaMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "HelveticaThin"; */
+@font-face {
+    font-family: "HelveticaThin";
+    src: url("../fonts/HelveticaThin/HelveticaThin.eot");
+    src: url("../fonts/HelveticaThin/HelveticaThin.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/HelveticaThin/HelveticaThin.woff") format("woff"),
+    url("../fonts/HelveticaThin/HelveticaThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+ 
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,  
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,  
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,  
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend { 
+  vertical-align: baseline; 
+  vertical-align: baseline; 
+  font-family: inherit; 
+  font-weight: inherit; 
+  font-style: inherit; 
+  font-size: 100%; 
+  outline: 0; 
+  padding: 0; 
+  margin: 0; 
+  border: 0; 
+  } 
+/* remember to define focus styles! */ 
+:focus { 
+  outline: 0; 
+  } 
+body { 
+  background: white; 
+  line-height: 1; 
+  color: black; 
+       font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+  } 
+ol, ul { 
+  list-style: none; 
+  } 
+/* tables still need cellspacing="0" in the markup */ 
+table { 
+  border-collapse: separate; 
+  border-spacing: 0; 
+  } 
+caption, th, td { 
+  font-weight: normal; 
+  text-align: left; 
+  } 
+/* remove possible quote marks (") from <q> & <blockquote> */ 
+blockquote:before, blockquote:after, q:before, q:after { 
+  content: ""; 
+  } 
+blockquote, q { 
+  quotes: "" ""; 
+  } 
+
+ input:focus:required:invalid,
+ textarea:focus:required:invalid,
+ select:focus:required:invalid{
+	border: 1px solid #da2224!important;
+	box-shadow: 0 0 3px  #da2224;
+	-moz-box-shadow: 0 0 3px  #da2224;
+	-webkit-box-shadow: 0 0 3px  #da2224; 
+}
+ 
+
+
+body{
+	background: #f2f2f2 url('../img/bg.png') top center no-repeat;
+    font-family: "HelveticaBold";	
+	background-size: 100%;
+}
+body *{
+   transition: all 0.4s ease;
+	-moz-transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+.container , 
+header .row,
+.block-2 .row,
+.block-3 .row,
+.block-4 .row{
+	max-width: 1020px!important;
+	width: 100%!important;
+}
+
+
+/*HEADER*/
+.header-cont{
+	min-height: 62px;
+	background: rgba(37, 37, 37, 0.4);
+	padding-top: 5px;
+}
+header .dropdown{
+	display: inline-block;
+	max-width: 120px;
+	width: 100%;
+	
+}
+
+header .dropdown-toggle:hover{
+	border: 1px solid #eaeaea!important;
+}
+header .dropdown:hover span{
+	color: #eaeaea!important;
+	
+}
+header .dropdown:hover .icon-bar{
+	background: #eaeaea!important;
+	
+}
+header .dropdown-toggle{
+	font-size: 20px;
+	background: transparent!important;
+	border: 1px solid #fff!important;
+	height: 50px;
+	width: 100%;
+    font-family: "HelveticaBold";
+	color: #fff!important;
+ 
+}
+header .dropdown-toggle span{
+	vertical-align: middle;
+}
+header .dropdown-toggle .glyphicon{
+	width: 25px;
+}
+.burger{
+	display: inline-block;
+	width: 25px;
+	height: auto;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+.burger span{
+	display: block;
+	height: 2px;
+	background: #fff;
+	margin-bottom: 5px;
+	
+}
+.burger span:last-child{
+	margin: 0;
+}
+header button.btn-warning{
+	height: 50px;
+	font-size: 20px;
+	padding:0 40px;
+	margin: 0 5px;
+}
+header .left{
+	text-align: right;
+}
+header h1{
+	font-size: 47px;
+    font-family: "HelveticaBold";
+	line-height: 54px;
+	color: #262626;
+	margin: 90px 0 20px;
+}
+/*HEADER*/
+
+/*BLOCK-2*/
+.block-2 h2{
+	font-size: 30px;
+    font-family: "HelveticaBold";
+	display: block;
+	color: #282828!important;
+}
+.prices{
+	font-size: 30px;
+    font-family: "HelveticaBold";
+	display: table;
+	width: 100%;
+	text-align: left;
+	color: #282828!important;	
+}
+
+.block-2 h2 small{
+	display: block;
+	color: #282828!important;	
+	font-size: 15px;
+	line-height: 20px;
+	margin-bottom: 5px;
+}
+a.thumbnail{
+	width: 110px;
+	height: 110px;
+	vertical-align: middle;
+ 	text-decoration: none;
+	border: 1px solid #a6a6a6;
+	border-radius: 1px;
+}
+a.thumbnail,
+.block-3 .item,
+select.form-control option:after{
+   transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;	
+	
+}
+a.thumbnail *{
+	vertical-align: middle;
+}
+a.thumbnail img{
+	display: inline-block;
+}
+.block-2 .item{
+	padding-left: 0;
+	padding-bottom: 0;
+}
+.block-2 .item.last{
+	display: inline-block!important
+}
+
+.item.last a.thumbnail h2{
+	line-height: 100px;
+}
+.item.active a.thumbnail,
+a.thumbnail:hover{
+	background: #f4a940;
+	border-color: #f4a940;
+	
+}
+.block-2  a.thumbnail h2{
+	margin-bottom: 0;
+}
+.block-2   h2:first-child{
+	margin-bottom: 25px;
+}
+h3{
+	font-size: 20px;
+	line-height: 22px;
+	color: #333333;
+}
+.block-2 p{
+	font-size: 14px;
+    font-family: "HelveticaRegular";
+	line-height: 18px;
+}
+.wraper-item{
+	margin-top: 15px;
+}
+.block-2 .right img{
+	max-width: 400px;
+	width: 100%;
+}
+/*BLOCK-2*/
+
+/*BLOCK-3*/
+.block-3{
+	padding-top: 5px;
+}
+.block-3 .item{
+	max-width: 465px;
+	width: 100%;
+	padding: 10px;
+	display: table;
+	border: 1px solid #bbb6af;	
+	margin: 20px 0;
+	position: relative;
+	cursor: pointer;
+}
+.block-3 .item.active,
+.block-3 .item:hover{
+	background: #f4a940;
+	border-color: #f4a940;	
+}
+.block-3 .item .image{
+	float: left;
+	max-width: 135px;
+	height: 135px;
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	line-height: 135px;
+	padding-top: 10px;
+	border: 1px solid #bbb6af;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	margin-right: 25px;
+}
+.block-3 .item h2{
+	 margin-top: 5px;
+}
+.block-3 .item .info{
+ 	float: left;
+	max-width: 62%;
+}
+.block-3 .item p{
+	font-size: 16px;
+    font-family: "HelveticaRegular";
+	line-height: 21px;
+	margin-top: 10px;
+	margin-bottom: 14px;
+	word-break: break-all;
+}
+.block-3 .item h2.cost-h {
+	display: block;
+	margin-bottom: 8px;
+ 
+}
+.block-3 .item .form{
+	float: right;
+    font-family: "HelveticaRegular";	
+	position: absolute;
+ 	right: 12px;
+	bottom: 12px;
+}
+.block-3 .item .form label{
+	font-size: 18px;
+	vertical-align: middle;
+}
+.block-3 .item .form input{
+	max-width: 75px;
+	height: 32px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 10px;
+	font-size: 23px;
+	padding: 0 8px;
+}
+.block-3 .left{
+	border-right: 1px solid #bbb6af;		
+}
+.block-3 .right .item{
+	float: right;
+}
+
+/*************BLOCL-4******************/
+.block-4{
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+.block-4 h3{
+	margin-bottom: 10px;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.block-4 .form{
+	display: table;
+	width: 100%;
+}
+.block-4 .form  .col-xs-8{
+	padding: 0;
+}
+.block-4 .form input{
+	border-radius: 1px;
+    font-family: "HelveticaRegular";
+	font-size: 14px;
+	height: 38px;
+}
+.block-4 .form button{
+	border-radius: 1px;	
+	font-size: 18px;
+	height: 38px;
+	width: 100%;
+	
+}
+.block-4 .left p strong{
+    font-family: "HelveticaBold";	
+}
+.block-4 .left p{
+	margin: 15px 0;
+	line-height: 20px;
+	font-size: 14px;
+    font-family: "HelveticaRegular";	
+}
+.block-4 small{
+	font-size: 14px;
+	display: block;
+	line-height: 20px;
+	color: #333333;
+}
+em{
+	color: #f4a940;
+}
+.block-4 .right{
+	padding-left: 30px;
+}
+.block-4 select.form-control{
+	height: 35px;
+	overflow: hidden;
+	width: 220px;
+	padding: 0;
+	border-radius: 1px;
+	
+}
+select.form-control option{
+	display: block;
+	width: 50%;
+	float: left;
+	height: 35px;
+	text-align: center;
+	font-size: 18px;
+	padding-top: 6px;
+	position: relative;
+
+}/*
+select.form-control option:nth-child(1):after{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	content: "Apple";
+	background: #f2f2f2;
+	line-height: 31px;
+	right: 0;
+	border-right: 1px solid #bbb6af;
+		color: #333333;
+}
+select.form-control option.active:after{
+	background: #f4a940!important;
+}
+select.form-control option:nth-child(2):after{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	content: "Android";
+	background: #f2f2f2;
+	line-height: 31px;
+	right: 0;
+	color: #333333;
+}*/
+.block-4 select[multiple] {
+	background-color: #fff!important;
+	-webkit-appearance: none;
+}
+.block-4 select[multiple]  option:first-child{
+	border-right: 1px solid #ccc;
+}
+.block-4 select[multiple]  option:focus{
+	background-color: #f4a940!important;
+	-webkit-appearance: none;	
+}
+
+.block-4 h4{
+	font-size: 14px;
+    line-height: 21px;
+	margin: 7px 0 4px;
+}
+.block-4 select.sphone{
+	max-width: 180px;
+	position: relative;
+	padding:0 8px;
+    font-family: "HelveticaRegular";	
+}
+ 
+ 
+
+/****************BLOCK-5*************************/
+.block-5,
+.block-6{
+	background: #fff;
+}
+.block-5 .container{
+	border-bottom: 1px solid #bbb6af;	
+}
+ #infoform .row:nth-child(1){
+	max-width: 760px;
+	margin: auto;
+	padding: 30px 0
+}
+.formset h2{
+	font-size: 35px;
+    font-family: "HelveticaRegular";
+	line-height: 40px;
+	text-align: center;
+	margin-bottom: 30px;
+}
+.formset label{
+	line-height: 24px;
+	margin-bottom: 4px;
+	font-size: 14px;
+}
+.formset input{
+	border-radius: 1px;
+	font-size: 14px;
+    font-family: "HelveticaRegular";	
+}
+.form-group{
+	padding: 0;
+}
+.formset .block-6 h2{
+	margin-bottom: 0;
+	line-height: 50px;
+}
+h5{
+	text-align: center;
+	color: #f4a940;
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 21px;	
+	margin-bottom: 15px;
+}
+.formset select,
+.formset select option{
+	font-size: 14px!important;
+    font-family: "HelveticaRegular";
+	border-radius: 1px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+ input[type="checkbox"] + label {
+    cursor: pointer;
+    padding-left: 15px;
+	 vertical-align: middle;
+	font-size: 14px!important;
+    font-family: "HelveticaRegular";	
+	 margin-top: 12px;
+}
+input[type="checkbox"] + label::before {
+    content: "";
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 0 8px 0 0;
+    background: #fff;
+    vertical-align: middle;
+	border: 1px solid #f4a940;
+	border-radius: 2px;
+	position: relative;
+	top: -1px;
+}
+input[type="checkbox"]:checked + label::before {
+         background: #5bc0de;
+		border: 1px solid #5bc0de;
+}
+
+/************BLOCK-7************/
+.block-7{
+	background: #fff;
+	display: none;
+   transition: all 0s ease;
+	-moz-transition: all 0s ease;
+	-webkit-transition: all 0s ease;	
+}
+.formset  .block-6 .container{
+		border-bottom: 0;
+}
+.formset  .block-7 .container{
+	border-bottom: 0;
+	border-top: 1px solid #bbb6af;
+}
+/************BLOCK-7************/
+
+
+/************BLOCK-8************/
+.formset .block-8 label {
+    font-family: "HelveticaRegular";
+	font-size: 16px;
+	color: rgba(51, 51, 51,0.6);
+}
+.row-price{
+	display: table;
+	width: 100%;
+	margin-bottom: 20px;
+}
+.row-price:first-child{
+	margin-bottom: 5px;
+}
+.row-price:first-child li{
+	min-width: 100px;
+	margin-right: 10px;
+}
+.row-price:nth-child(3),
+.row-price:nth-child(5){
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #ccc;		
+}
+.row-price:last-child{
+	margin-bottom: 0;
+}
+.row-price li{
+	display: inline-block;
+}
+.row-price ul{
+	float: right;
+}
+.wraper-price{
+	padding: 40px;
+	border: 1px solid #ccc;	
+}
+.row-price li{
+	min-width: 40px;
+	text-align: center;
+	font-size: 30px;
+    font-family: "HelveticaRegular";
+	color: #333333;
+}
+.row-price li.price,
+.row-price li.total{
+	min-width: 110px;
+	text-align: right;
+}
+.row-price li.total{
+    font-family: "HelveticaBold";	
+}
+/*************BLOCK-8************/
+
+/*************BLOCK-9************/
+.block-9 .form-group {
+	padding: 0 15px;
+}
+.block-9 .form-group .col-xs-3,
+.block-9 .form-group .col-xs-9,
+.block-9 .form-group .control-label,
+.block-9 .form-group .col-xs-12{
+	padding: 0;
+}
+.wraper-price{
+	display: table;
+	width: 100%;
+}
+#CardNumber{
+ 	-webkit-text-security: disc;
+	text-security:disc;
+}
+#CardNumber:focus{
+ 	-webkit-text-security: none;
+	text-security:none ;
+}
+.block-9 h6{
+	text-align: center;
+	font-size: 14px;
+    font-family: "HelveticaRegular";	
+}
+.block-9 ul{
+	text-align: center;
+	margin: 10px 0 25px;
+}
+.block-9 ul li{
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 4px;
+}
+
+.block-9  .wraper-price{
+	padding: 40px 30px 30px;	
+}
+.block-9 .btn-warning{
+	width: 100%;
+	margin: 30px 0;
+	border-radius: 1px;
+	font-size: 25px;
+	background: #f4a940;
+	color: #333;
+	height: 58px;
+}
+.block-9 .btn-warning:hover{
+	background: #e09326;	
+}
+
+.block-9 .container{
+	border-bottom: 0!important;
+}
+
+/*************FOOTER**************/
+footer{
+	background: #262626;
+	padding: 20px 0
+}
+footer ul li,
+footer ul.navs li{
+	display: inline-block;
+	font-size: 12px;
+	color: #fff;
+	margin-right: 20px;
+	line-height: 24px;
+}
+footer ul li a,
+footer ul.navs li a{
+	text-decoration: none!important;
+	font-size: 12px!important;
+	color: #fff!important;
+    font-family: "HelveticaRegular";
+	background: transparent!important;
+}
+footer ul{
+	margin: 10px 0;
+}
+/**************footer********************/
+.item-other-s{
+	padding-left: 0;
+	display: none;
+}
+.item-other-s .thumbnail{
+	width: 100%;
+	padding: 0;
+	background-color: transparent!important;
+	position: relative;
+	display: table;
+	overflow: hidden;
+}
+.item-other-s .thumbnail label{
+	height: 108px;
+	display: block;
+	float: left;
+	width: 48%;
+	font-size: 30px;
+	line-height: 105px;
+	color: rgba(0,0,0,0.6);
+	
+}
+.item-other-s .thumbnail input{
+	float: left;
+	width: 52%;
+	border: 0;
+	height: 108px;	
+	font-size: 30px;
+	color: #000;
+	padding: 0 12px;
+}
+.item-other-s .thumbnail .close{
+	position: absolute;
+	top: 10px;
+	right: 15px;
+	width: 22px;
+	height: 22px;
+	display: block;
+	text-align: center;
+	background: #1c1c1c;
+	color: #fff;
+	font-size: 16px;
+	line-height: 22px;
+    font-family: "HelveticaRegular";	
+}
+
+.invalid{
+	font-size: 14px;
+	color: #d70000;
+	line-height: 21px;
+	margin: 2px 0;
+	display: none;
+}
+.form-group.active .invalid{
+	display: block;
+}
+
+
