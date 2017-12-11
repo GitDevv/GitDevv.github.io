@@ -1,6 +1,11 @@
 $(document).ready(function(){	
 	
  	
+	$('.drop-menu').click(function(e){
+		e.preventDefault();
+		$(this).toggleClass('active');
+		var thisLi = $(this).closest('li').find('.menu-2').slideToggle();
+	});
 	
 	$('.search-toggle, .search-mobt').click(function(e){
 		e.preventDefault();
@@ -105,7 +110,7 @@ $(document).ready(function(){
 		e.preventDefault();
 		var anchor = jQuery(this);
 		jQuery('html, body').stop().animate({
-			scrollTop:jQuery(anchor.attr('href')).offset().top
+			scrollTop:jQuery(anchor.attr('href')).offset().top - 180
 		}, 1500,'easeInOutExpo');
 		pde(e);
 	});	
