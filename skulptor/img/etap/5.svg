@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="94" viewBox="0 0 80 94">
+    <defs>
+        <rect id="a" width="52" height="23" y="67" rx="5"/>
+        <rect id="b" width="38" height="58" x="7" y="32" rx="5"/>
+        <rect id="c" width="15" height="9" x="18" y="27" rx="4.5"/>
+        <path id="d" d="M51 79h29v10H51z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(0 4)">
+        <use fill="#787A86" xlink:href="#a"/>
+        <rect width="49" height="20" x="1.5" y="68.5" stroke="#404149" stroke-width="3" rx="5"/>
+        <use fill="#787A86" xlink:href="#b"/>
+        <rect width="35" height="55" x="8.5" y="33.5" stroke="#404149" stroke-width="3" rx="5"/>
+        <use fill="#B4B5BE" xlink:href="#c"/>
+        <rect width="12" height="6" x="19.5" y="28.5" stroke="#404149" stroke-width="3" rx="3"/>
+        <circle cx="25.5" cy="60.5" r="8.5" fill="#B4B5BE" stroke="#FFB800" stroke-width="2"/>
+        <path stroke="#FFB800" stroke-linecap="square" d="M21.357 73h9.313M21.357 76h9.313M21.357 78h9.313"/>
+        <path stroke="#404149" stroke-linejoin="round" stroke-width="7" d="M26 27.068V0h38v76"/>
+        <g>
+            <use fill="#B4B5BE" xlink:href="#d"/>
+            <path stroke="#404149" stroke-width="2" d="M52 80h27v8H52z"/>
+        </g>
+        <path fill="#787A86" stroke="#404149" stroke-width="3" d="M57 75h15v3H57z"/>
+    </g>
+</svg>
