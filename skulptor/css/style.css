@@ -1585,9 +1585,6 @@ form :-moz-placeholder {color: #b4b5be;}
 .works {
 	padding: 45px 0 40px;
 }
-.works .container {
-	
-}
 .works h2 {
 	font-size: 36px;
 	font-weight: 600;
@@ -1817,6 +1814,19 @@ form :-moz-placeholder {color: #b4b5be;}
   font-weight: 600;
   line-height: 1.25;
   color: #404149;	
+	background: none!important;
+ 
+}
+.table-cost  .item .top{
+	overflow: hidden;
+}
+.table-cost  .item .top> div{
+	transition: all 0.3s ease;
+	-webkit-transition: all 0.3s ease;	
+}
+.table-cost  .item.active .top> div{
+	background: #f2f3f5;
+ 
 }
 .table-cost .item .right {
 	border-left: 1px solid #787a86;
@@ -1851,6 +1861,7 @@ form :-moz-placeholder {color: #b4b5be;}
 	padding: 0 5px;
 	background: #fff;
 }
+
 
 
 @media ( max-width:1200px ){
