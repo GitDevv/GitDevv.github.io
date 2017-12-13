@@ -1,5 +1,26 @@
 $(document).ready(function(){	
 	
+	$('.callback').click(function(e){
+		e.preventDefault();
+		$('.modal-wrap').fadeIn();
+	});
+	
+	$('.modal-wrap .close').click(function(e){
+		e.preventDefault();
+		$('.modal-wrap').fadeOut();
+	});	
+	
+	$('.tab-links a').click(function(e){
+		e.preventDefault();
+		var $this = $(this).attr('data-link');
+		$('.tab-links a').removeClass('active');
+		$(this).addClass('active');
+		$('.tab-item').fadeOut();
+		$('#'+$this).fadeIn();
+	});
+	
+	$('.nice-select').niceSelect();
+	
 	$('.info-accord .info-block .arrow').click(function(e){
 		e.preventDefault();
 		var item = $(this).closest('.item');
