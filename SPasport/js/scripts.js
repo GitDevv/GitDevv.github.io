@@ -77,9 +77,9 @@ $(document).ready(function(){
 
 	});	
 
- 		var headH= $('.inner-body').find('.site-header').height();
- 		var headP= parseInt($('.inner-body').find('.site-header').css('padding-top'));
-		$('.inner-body').css('padding-top',headH + headP + headP);
+ 		var headH= $('.site-header').height();
+ 		var headP= parseInt($('.site-header').css('padding-top'));
+		$('.page-nav').css('margin-top',headH + headP + headP);
 	if($("body").width() > 769){
 	}else{
 		$('.sidebar .title, .toggle-sidebar ').click(function(e){
