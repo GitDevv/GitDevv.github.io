@@ -104,7 +104,11 @@ a{
 	padding: 16px 0;
 	background-color: #FFFFFF;
 	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.53);
-	position: relative;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 999;
 }
 .site-header .container {
 	font-size: 0;
@@ -164,6 +168,11 @@ a{
 .mob-header ul a.active:after,
 .mob-header ul a:hover:after{
 	width: 100%;
+	background: #0052FF;
+}
+.site-header .center a:hover,
+.mob-header ul a:hover{
+	color: #0052FF;
 }
 .site-header .right {
 	display: inline-block;
@@ -176,7 +185,7 @@ a{
 	max-width: 239px;
 	border: 2px solid #0052FF;
 	border-radius: 2px;
-	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.29);	
+	-webkit-border-radius: 2px;
 	display: inline-block;
 	width: 100%;
 	text-align: center;
@@ -466,15 +475,26 @@ a{
 	max-width: 450px;
 	display: inline-block;
 }
+.project .item a:hover{
+	color: #0052FF;
+}
 .project .image {
 	font-size: 0;
 	margin: 0 0 20px;
 }
+.project .image img{
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;
+}
+.project .image img:hover{
+	transform: scale(1.03);
+} 
 .project .tag {
 	font-size: 0;
 	position: absolute;
 	left: 15px;
 	top: 15px;
+	z-index: 20;
 }
 .project .tag li {
 	height: 24px;
@@ -499,7 +519,6 @@ a{
 	height: 54px;
 	border-radius: 2px;
 	background-color: #0052FF;
-	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.29);	
 	display: table;
 	color: #FFFFFF;
 	font-size: 16px;
@@ -528,7 +547,6 @@ a{
 
 .block-number  {
 	background-color: #FAFAFA;
-	box-shadow: 0 2px 11px 0 rgba(0,0,0,0.15);
 	padding: 50px 0 30px;
 }
 .block-number .container {
@@ -763,9 +781,12 @@ a{
 	width: 50%;
 }
 .site-footer .center a  {
-	color: #FFFFFF;
+	color: rgba(255, 255, 255, 0.6);
 	font-size: 14px;
 	line-height: 26px;
+}
+.site-footer .center a:hover{
+	color: #fff;
 }
 .site-footer .right {
 	display: inline-block;

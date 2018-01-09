@@ -1,5 +1,9 @@
 $(document).ready(function(){	
 	
+ 		var headH= $('.site-header').height();
+ 		var headP= parseInt($('.site-header').css('padding-top'));	
+ 		$('body').css('padding-top',headH + headP + headP);	
+	
 	$('.callback').click(function(e){
 		e.preventDefault();
 		$('.wrap-modal').fadeIn();
