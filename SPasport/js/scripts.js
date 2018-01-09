@@ -5,8 +5,7 @@ $(document).ready(function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		arrows: false,
-		asNavFor: '.property-sb',
-
+		asNavFor: '.property-sb'
 	});
 	$('.property-sb').slick({
 		slidesToShow: 4,
@@ -58,12 +57,12 @@ $(document).ready(function(){
 	$('.main .list-country > li.active .list-info').slideDown(0);
 	$('.main .list-country > li.active').css('margin-bottom',hlist + plist + plist);
  	
-	$('.main .list-country > li').click(function(e){
+	$('.main .list-country > li .name').click(function(e){
 		e.preventDefault();
 		$('.main .list-country > li').removeClass('active').css('margin-bottom','0');
 		$('.main .list-country > li .list-info').slideUp(0);
-		$(this).addClass('active').css('margin-bottom', hlist + plist + plist);
-		$(this).find('.list-info').slideDown(0);
+		$(this).closest('li').addClass('active').css('margin-bottom', hlist + plist + plist);
+		$(this).closest('li').find('.list-info').slideDown(0);
 	});
 	
  
