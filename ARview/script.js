@@ -1,11 +1,9 @@
 var vrView;
-
+ 
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
-	width:'100%',
-	height:480,
-    image: 'blank.png',
-    preview: 'blank.png',
+    image: 'walrus.jpg',
+    preview: 'walrus-preview.jpg',
     is_stereo: true,
     is_autopan_off: true
   });
@@ -13,7 +11,6 @@ function onLoad() {
   vrView.on('ready', onVRViewReady);
   vrView.on('modechange', onModeChange);
   vrView.on('error', onVRViewError);
-  vrView.on('getposition', onGetPosition);
 }
 
 function onVRViewReady(e) {
@@ -23,13 +20,6 @@ function onVRViewReady(e) {
 function onModeChange(e) {
   console.log('onModeChange', e.mode);
 }
-
-function onGetPosition(e) {
-  console.log(e);
-
-}
-
- 
 
 function onVRViewError(e) {
   console.log('Error! %s', e.message);
