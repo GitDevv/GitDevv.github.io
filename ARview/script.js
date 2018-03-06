@@ -2,6 +2,8 @@ var vrView;
  
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
+	width:'100%',
+	height:480,
     image: 'walrus.jpg',
     preview: 'walrus-preview.jpg',
     is_stereo: true,
