@@ -1,11 +1,9 @@
 var vrView;
 
-// All the scenes for the experience
- 
 function onLoad() {
   vrView = new VRView.Player('#vrview', {
 	width:'100%',
-	height:'100%',	  
+	height:480,
     image: 'blank.png',
     preview: 'blank.png',
     is_stereo: true,
@@ -14,7 +12,6 @@ function onLoad() {
 
   vrView.on('ready', onVRViewReady);
   vrView.on('modechange', onModeChange);
-  vrView.on('click', onHotspotClick);
   vrView.on('error', onVRViewError);
   vrView.on('getposition', onGetPosition);
 }
@@ -33,14 +30,8 @@ function onGetPosition(e) {
 
 }
 
-function onHotspotClick(e) {
-  vrView.getPosition()
-  console.log('onHotspotClick', e.id);
-  if (e.id) {
-    loadScene(e.id);
-  }
-}
  
+
 function onVRViewError(e) {
   console.log('Error! %s', e.message);
 }
