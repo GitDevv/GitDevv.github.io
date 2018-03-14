@@ -113,7 +113,6 @@
 
     <div id="access"><div><p data-text="allowAccess">Please allow access to the camera</p></div></div>
 
-<!--
     <div id="sceneLoader">
         <div>
             <p data-text="loadingTheMagic">loading the magic</p>
@@ -122,7 +121,6 @@
     </div>
 
     <div id="preloader"><div><div class="spinner"></div></div></div>
--->
 
     <div id="noAccess">
         <div>
@@ -143,7 +141,50 @@
         </div>
     </div>
 
- 
+    <div id="desktop">
+
+        <a data-text="joinTheCommunityTop" class="join" href="https://xr.plus//register">Join the community and upload your 3D models!</a>
+
+        <div class="content">
+
+            <div class="marker">
+                <img class="patternPreview" src="https://xr.plus/assets/xrplus-marker-512.png" alt="ar marker" />
+            </div>
+
+            <div class="youtube">
+                <div class="videoWrapper" id="youtubeIframeWrapper"></div>
+            </div>
+
+            <div class="text">
+                <h3><span data-text="betterOnMobile">Augmented Reality is better on mobile</span></h3>
+                <p><span data-text="visitOnMobile">On your phone web browser, visit </span><span class="url">xr.plus/jt8</span></p>
+            </div>
+
+        </div>
+
+        <div class="buttons">
+            <div>
+                <span data-text="continueAnyway" class="button" id="b_continueOnDesktop">continue anyway</span>
+                <a data-text="print" class="button" target="_blank" href="https://xr.plus/pdf/xr_dot_plus_marker.pdf"><!-- <i class="fa fa-print"></i> -->print the pattern</a>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="logo">
+        <img src="https://xr.plus/assets/logo.png" alt="XR.+" />
+    </div>
+
+    <div id="social">
+        <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=cosmonaut%20#XRdotPlus%20#AR%20on%20web%20browsers"></a>
+        <div class="fb-share-button" data-href="https://xr.plus/jt8" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fxr.plus%2F&amp;src=sdkpreparse">Share</a></div>
+    </div>
+
+    <footer>
+        <img class="patternPreview" src="https://xr.plus/assets/xrplus-marker-512.png" alt="ar marker" />
+        <p data-text="direct">Direct the camera to this pattern</p>
+        <span class="button" id="b_marker" data-text="iDontHave">I don't have it</span>
+    </footer>
 
     <div id="orientation">
         <span class="button small" id="b_audio">enable sounds</span>
@@ -154,8 +195,76 @@
         </ul>
     </div>
 
- 
- 
+    <div id="marker">
+
+        <div class="image">
+            <img class="patternPreview" src="https://xr.plus/assets/xrplus-marker-512.png" alt="ar marker" />
+        </div>
+        <div class="text mobile">
+            <p data-text="onAnother">On <span class="red">another phone</span> or on a <span class="red">computer</span>, <br/>visit <span class="link">xr.plus/p</span> <br/>to display the AR pattern.</p>
+            <p class="overButton">
+                <span class="button" id="b_marker_ok">ok</span>
+            </p>
+        </div>
+        <div class="text desktop">
+            <p class="url">xr.plus/jt8</p>
+            <p data-text="visitThisLink">Visit this link with your phone browser<br/>and to point the phone camera here.</p>
+        </div>
+        <span class="b_close" id="b_close_marker"></span>
+    </div>
+
+    <div id="patternNoCamera">
+
+        <div class="image">
+            <img class="patternPreview" src="https://xr.plus/assets/xrplus-marker-512.png" alt="ar marker" />
+        </div>
+        <div class="text">
+            <p class="url">xr.plus/jt8</p>
+            <p data-text="visitThisLinkPattern">Visit this link from your phone browser and point the camera to this pattern.</p>
+        </div>
+        <span class="b_close" id="b_close_patternNoCamera"></span>
+    </div>
+
+    <div id="more">
+        <div>
+            <p data-text="discoverMoreOnTheHome">Discover more on the homepage</p>
+            <a data-text="discoverMore" class="button discover" href="https://xr.plus/">discover more</a>
+            <p data-text="joinTheCommunity">Join the community and upload your models</p>
+            <a data-text="joinNow" class="button" href="https://xr.plus/register">Join now</a>
+        </div>
+        <span class="b_close" id="b_close_more"></span>
+    </div>
+
+    <div id="redirection">
+        <div>
+            <p id="p_redirection"></p>
+            <p><a class="button" id="b_redirection" href="" target="_blank"></a></p>
+        </div>
+        <span class="b_close" id="b_close_redirection"></span>
+    </div>
+
+
+    <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_UK/sdk.js#xfbml=1&version=v2.11&appId=824878554360740';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+    <video id="bgVideo" autoplay muted playsinline></video>
+
+    <script>
+        var _language = navigator.language || navigator.userLanguage;
+        //alert( _language);
+        const _rootDirectory = "https://xr.plus/";
+        const _projectURL = "jt8";
+        const _isDebug = false;
+        const _isPublished = 1;
+        var _isVertical = false;
+    </script>
     <script src="publicar/js/texts.js"></script>
     <script src="https://xr.plus/js/is.min.js"></script>
     <script src="https://xr.plus/js/jszip315.min.js"></script>
