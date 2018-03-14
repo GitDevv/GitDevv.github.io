@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+
+    <title>AR | cosmonaut</title>
+    <meta name="keywords" content="AR VR XR webAR browser XR+ XR.+ xr.plus" />
+    <meta name="description" content="Create, edit and share AR and VR projects directly in a browser" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+
+    <meta name="mobile-web-app-capable" content="yes"> <!-- fullscreen if added in homescreen -->
+	<meta name="google" value="notranslate">
+
+    <meta name="theme-color" content="#000000" />
+
+    
+    <meta property="og:updated_time" content="1521009514" />
+
+    <meta property="og:image" content="https://xr.plus/s/201710/jt8/preview-jt8.jpg" />
+    <meta property="og:image:secure_url" content="https://xr.plus/s/201710/jt8/preview-jt8.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="500" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="cosmonaut" />
+    <meta property="og:description" content="Create and share AR &amp; VR projects directly in web browsers" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:url" content=" " />
+ 
+	<link rel="stylesheet" type="text/css" href="https://xr.plus/fonts/interface/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+
+
+    <style>
+
+        #preloader{
+            z-index:101;
+            position:fixed;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            background:#e0e0e0;
+        }
+
+        #preloader >div{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+        }
+
+        #preloader .spinner{
+            margin: auto;
+            width: 160px;
+            height: 160px;
+            position: relative;
+            border-radius: 50%;
+            border: 5px solid white;
+            border-right: 5px solid red;
+            border-bottom: 5px solid red;
+            border-left: 5px solid red;
+            -webkit-animation: spin 1s ease infinite;
+            animation: spin 1s ease infinite;
+        	transform:none;
+        	top:auto;
+        	left:auto;
+        }
+
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotateZ(0);
+                transform: rotateZ(0)
+            }
+            100% {
+                -webkit-transform: rotateZ(359deg);
+                transform: rotateZ(359deg)
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                -webkit-transform: rotateZ(0);
+                transform: rotateZ(0)
+            }
+            100% {
+                -webkit-transform: rotateZ(359deg);
+                transform: rotateZ(359deg)
+            }
+        }
+
+        #noAccess, #noCamera, #desktop{
+            display:none;
+        }
+
+        
+    </style>
+
+ 
+</head>
+
+<body class="defaultBranding">
+
+    
+    <canvas id="threejs"></canvas>
+
+    <div id="access"><div><p data-text="allowAccess">Please allow access to the camera</p></div></div>
+
+<!--
+    <div id="sceneLoader">
+        <div>
+            <p data-text="loadingTheMagic">loading the magic</p>
+            <div class="filler"><div id="fill" class="fill"></div></div>
+        </div>
+    </div>
+
+    <div id="preloader"><div><div class="spinner"></div></div></div>
+-->
+
+    <div id="noAccess">
+        <div>
+            <h3 data-text="noAccess">No camera access</h3>
+            <p data-text="yesCamera" id="yesCamera">Accessing your device camera is required for augmented reality experiences</p>
+
+            <div id="noCamera">
+                <p data-text="noCamera">Sorry, but it seems you have no camera plugged-in. Plug a camera and try again</p>
+            </div>
+
+            <p>
+                <a data-text="tryAgain" class="button" id="tryAgain" href="https://xr.plus/jt8">try again</a>
+            </p>
+            <p>
+                <span data-text="displayThePattern" class="button" id="b_showPattern">display the AR pattern</span>
+            </p>
+
+        </div>
+    </div>
+
+ 
+
+    <div id="orientation">
+        <span class="button small" id="b_audio">enable sounds</span>
+
+        <ul>
+            <li id="h" data-text="flat">flat</li>
+            <li id="v" data-text="vertical">vertical</li>
+        </ul>
+    </div>
+
+ 
+ 
+    <script src="publicar/js/texts.js"></script>
+    <script src="https://xr.plus/js/is.min.js"></script>
+    <script src="https://xr.plus/js/jszip315.min.js"></script>
+        <script src="https://xr.plus/js/jszip-utils.fork.js"></script>
+    <script src="https://xr.plus/js/inflate.min.js"></script>
+    <script src="https://xr.plus/js/3-90.js"></script>
+<!--    <script src="https://xr.plus/js/threejs/loaders.js"></script>-->
+    <script src="https://xr.plus/js/Tween.js"></script>
+
+
+    <script src="js/cl_lib.js"></script>
+    <script src="js/artoolkit.min.js"></script><script src="publicar/js/ars.js"></script>
+
+
+</body>
+</html>
