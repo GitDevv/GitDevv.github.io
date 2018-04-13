@@ -43,7 +43,34 @@ $(document).ready(function(){
 		dots:true,
 		autoplay:true
 
+	});		
+	
+	$('.slider-project').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		arrows: true,
+		dots:false,
+		autoplay:true
+
 	});	
+	$('.reviews-slider').slick({
+		slidesToShow: 2,
+		slidesToScroll: 1,
+		arrows: false,
+		dots:false,
+		autoplay:true,
+//			centerMode: true,
+//			centerPadding: '240px',		
+		  responsive: [
+			{
+			  breakpoint: 650,
+			  settings: {
+				  slidesToShow: 1
+			  }
+			}
+		  ]		
+
+	});		
  	
     $('.toggle-menu').click(function(e){
         e.preventDefault();
