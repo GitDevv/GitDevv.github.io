@@ -2536,6 +2536,39 @@ font-family: 'Montserrat', sans-serif;
 }
 
 
+.main-9 {
+	position: relative;
+	padding: 155px 0 270px;
+}
+.main-9 .img-geo {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	max-width: 60vw;
+}
+.main-9 .info {
+	max-width: 40%;
+}
+.main-9 .info img {
+	max-width: 100%;
+}
+.main-9 h2 {
+	color: #0052FF;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 29px;
+	margin-bottom: 22px;
+}
+.main-9 p {
+	margin-bottom: 35px;
+	color: #333333;
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 0.86px;
+	line-height: 27px;	
+}
+
+
 /********NEW STYLE END************************/
 
 
@@ -2758,6 +2791,20 @@ font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width:768px ){
+	.main-9 {
+		position: relative;
+		padding: 65px 0 70px;
+	}
+	.main-9 .img-geo {
+		position: static;
+		right: 0;
+		bottom: 0;
+		max-width: 100%;
+	}
+	.main-9 .info {
+		max-width: 100%;
+		margin-bottom: 30px;
+	}	
 	.reviews .bg{
 		display: none;
 	}
@@ -3200,6 +3247,9 @@ font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width:600px ){
+	.main-9 .img-geo {
+		display: none;
+	}
 	.block-number p{
 		font-size: 14px;
 	}
