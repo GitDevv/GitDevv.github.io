@@ -246,6 +246,10 @@ br.hide{
 	.jcarousel-control-prev{
 		left: 5px;
 	}
+	#bg_main{
+		background-attachment: inherit;
+		background-size: cover;
+	}
 }
 
 
