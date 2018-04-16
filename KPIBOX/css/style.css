@@ -5,7 +5,7 @@ a{text-decoration: none;}
 a:hover{text-decoration: underline;}
 img{border: none;}
 b, strong{font-weight: normal;}
-#bg_main{width: 100%;height: 100%;position: fixed;background: url(../img/bg_main.jpg);background-repeat:no-repeat;background-position:center center;background-attachment:fixed;-o-background-size: cover, auto;-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;}
+#bg_main{width: 100%;height: 100%;position: fixed;background: url(../img/dubai-business.jpg);background-repeat:no-repeat;background-position:center center;background-attachment:fixed;-o-background-size: cover, auto;-moz-background-size: cover;-webkit-background-size: cover;background-size: cover;}
 #bg_main2{width: 100%;height: 100%;position: fixed;background: url(../img/back.png);background-repeat:repeat;background-position:center center;background-attachment:fixed;}
 #container{min-width: 1200px;position: relative;margin: 0;background: transparent; overflow: hidden;}
 #header{height: 62px;padding: 20px 27px 0 25px;background: rgba(3,2,1,0.41);}
@@ -85,8 +85,12 @@ button{cursor: pointer;}
 
 
 
-
-
+#header .title3{
+	text-decoration: none;
+}
+br.hide{
+	display: none;
+}
 
 @media ( max-width:1400px ) {
 	#container{
@@ -135,6 +139,9 @@ button{cursor: pointer;}
 }
 
 @media ( max-width:950px ) {
+	br.hide{
+		display: block;
+	}	
 	#center form{
 		max-width: 600px;
 		width: 100%;
