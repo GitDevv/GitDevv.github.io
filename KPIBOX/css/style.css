@@ -92,6 +92,31 @@ br.hide{
 	display: none;
 }
 
+.jcarousel img{
+	max-height: 40%;
+	max-width: 95%;
+	width: auto;
+	height: auto;
+}
+.jcarousel .spa img{
+	max-height: 12%;
+}
+.jcarousel .mashreq img{
+	max-height: 20%;
+}
+
+#bg_main:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.2);
+}
+#center .title5{
+	color: #ccc;
+}
 @media ( max-width:1400px ) {
 	#container{
 		min-width: 300px;
