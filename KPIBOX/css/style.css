@@ -88,6 +88,11 @@ button{cursor: pointer;}
 #header .title3{
 	text-decoration: none;
 }
+#header .title1 img{
+	max-width: 70px;
+	max-height: 64px;
+	margin-top: -12px;
+}
 br.hide{
 	display: none;
 }
@@ -219,7 +224,7 @@ br.hide{
 		height: auto;
 	}
 	#header .title1{
-		margin-bottom: 24px;
+		margin-bottom: 12px;
 	}
 	#header{
 		padding: 10px 10px 5px;
@@ -229,6 +234,11 @@ br.hide{
 
 
 @media ( max-width:750px ) {
+#header .title1 img{
+	max-width: 90px;
+	max-height: 95px;
+	margin-top: 0;
+}	
 	#header .title3 {
 		top: 25px;
 		right: 27px;
