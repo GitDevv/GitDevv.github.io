@@ -1,0 +1,508 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 14px;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	border: 0;
+	list-style: none;
+ 
+}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+}
+body{
+	overflow-x: hidden;
+    position: relative;
+} 
+*{
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+	        box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+    outline: 0!important;    
+	font-family: 'Roboto', sans-serif;
+}
+
+a{
+	transition: all 0.4s ease;
+	-webkit-transition: all 0.4s ease;	
+}
+
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	padding: 0 15px;
+	font-size: 0;
+	position: relative;
+}
+
+
+.site-header {
+	padding: 16px 0;
+	background: #000;
+}
+.site-header .col {
+	display: inline-block;
+	vertical-align: middle;
+}
+.site-header .logo {
+	width: 33.33%;
+	position: relative;
+}
+.site-header .logo .portfolio-link{
+	position: absolute;
+	font-size: 20px;
+	color: #8a8a8a;
+	text-transform: uppercase;
+	font-weight: 600;
+	top: 50%;
+	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	right: 20%;
+}
+.site-header .phone {
+	width: 41.66%;
+}
+.site-header .phone li {
+	display: inline-block;
+	vertical-align: middle;
+}
+.site-header .phone a {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 300;	
+	text-decoration: none;
+}
+.site-header .phone span {
+	font-weight: 300;
+	font-size: 24px;
+	vertical-align: middle;
+	display: inline-block;
+	text-decoration: none;
+}
+.site-header .phone img {
+	margin: 0 15px;
+	vertical-align: middle;
+	display: inline-block;	
+}
+.site-header .phone li:last-child a{
+	font-size: 0;
+}
+.site-header .mail{
+	width: 25%;
+	text-align: right;
+}
+.site-header .mail a{
+	display: inline-block;
+}
+.site-header .mail img{
+	vertical-align: middle;
+	display: inline-block;	
+	margin-right: 10px;
+}
+.site-header .mail span{
+	font-weight: 300;
+	font-size: 18px;
+	vertical-align: middle;
+	display: inline-block;
+	text-decoration: none;	
+	color: #fff;
+}
+
+
+.porfolio {
+	padding-top: 50px;
+}
+.porfolio .title {
+	font-size: 0;
+	padding-bottom: 40px;
+}
+.porfolio .title p{
+	font-size: 16px;
+	color: #696969;
+	padding: 15px 0;
+}
+.porfolio .title .link{
+	font-size: 16px;
+	color: #3b8cb6;
+	text-decoration: underline;
+	display: inline-block;
+}
+.porfolio .left {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+.porfolio h2 {
+	color: #ed252c;
+	font-size: 60px;
+	font-weight: 900;
+	text-transform: uppercase;
+}
+.porfolio .right {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;	
+}
+.porfolio .title .social {
+	text-align: right;
+	padding-top: 15px;
+}
+.porfolio .social li {
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 15px;
+}
+.porfolio .filter {
+	margin-bottom: 35px;
+}
+.porfolio .filter li {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 35px;
+	margin-bottom: 10px;
+}
+.porfolio .filter a {
+	font-size: 16px;
+	color: #696969;
+}
+.porfolio .filter .active {
+	color: #ed252c;
+	text-decoration: underline;
+}
+.porfolio .list {
+	font-size: 0;
+}
+.porfolio .list li {
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+}
+.porfolio .list li:nth-child(2n-1) {
+	border-right: 1px solid #fff;
+}
+.porfolio .list a {
+	display: block;
+	background-size: cover;
+	background-position: center;
+}
+.porfolio .list a:before {
+	content: "";
+	display: block;
+	padding-top: 70%;
+}
+.porfolio > .social {
+	padding: 120px 0 80px;
+	text-align: center;
+}
+
+.porfolio h3 {
+	font-size: 24px;
+	color: #ff0000;
+	text-transform: uppercase;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 45px;
+}
+.porfolio .view-all {
+	font-size: 18px;
+	color: #ff0000;
+	text-decoration: underline;
+	font-weight: 300;
+	text-align: center;
+	display: table;
+	margin: 55px auto 0;
+}
+.porfolio.inner > .social {
+	padding-top: 70px;
+}
+
+.time-develop {
+	background: #d1d1d1;
+	padding: 15px 0;
+	margin: -10px 0 50px;
+}
+.time-develop .container {
+	font-size: 30px;
+	font-weight: 300;
+}
+.time-develop span {
+	font-size: 50px;
+}
+
+.info-work {
+	padding-bottom: 75px;
+}
+.info-work .container {
+	font-size: 0;
+}
+.info-work .item {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	margin-right: 4%;
+	padding-left: 30px;
+}
+.info-work .item:nth-child(2n) {
+	margin-right: 0;
+}
+.info-work h4 {
+	font-size: 18px;
+	color: #000;
+	font-weight: 500;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	position: relative;
+}
+.info-work h4:before {
+	position: absolute;
+	left: -30px;
+	content: "";
+	width: 20px;
+	height: 20px;
+	background: url(../img/Ellipse.png) center no-repeat;
+}
+.info-work p {
+	font-size: 15px;
+	color: #000;
+	font-weight: 300;
+	position: relative;
+}
+.info-work p:after {
+	content: "";
+	position: absolute;
+	left: -22px;
+	top: 0;
+	bottom: 0;
+	width: 1px;
+	background: #ed252c;
+	min-height: 70px;
+}
+
+
+.wr-content-images {
+	text-align: center;
+}
+.wr-content-images img {
+	max-width: 100%;
+	margin-bottom: 45px;
+}
+.wr-content-images h3 {
+	font-size: 24px;
+	color: #000;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 500;
+	text-align: left;
+	margin-bottom: 45px;
+	padding-left: 25px;
+	position: relative;
+}
+.wr-content-images h3:after {
+	position: absolute;
+	content: "";
+	left: 0px;
+	top: 6px;
+	width: 16px;
+	height: 16px;
+	background: url(../img/Ellipse.png) center no-repeat;
+}
+
+.rezult {
+	max-width: 550px;
+	margin: auto;
+	text-align: center;
+	padding-bottom: 40px;
+}
+.rezult h3 {
+	font-size: 18px;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 500;
+	text-align: center;
+	margin-bottom: 25px;
+}
+.rezult img {
+	vertical-align: middle;
+	display: inline-block;
+}
+.rezult span {
+	vertical-align: middle;
+	font-size: 18px;	
+	display: inline-block;
+	margin-left: 10px;
+}
+
+
+.inner-page {
+	background: #d4d4d4;
+	padding: 40px 0 65px;
+	margin-bottom: 120px;
+	position: relative;
+}
+.inner-page .container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 50px;
+}
+.inner-page img {
+	max-width: 100%;
+	display: table;
+	margin: auto;
+}
+
+@media ( max-width:1200px ) {
+	.site-header .logo .portfolio-link{
+		right: auto;
+		left: 120px;
+		font-size: 16px;
+		z-index: 20;
+	}
+	.site-header .logo{
+		width: 30%;
+	}
+	.site-header .logo img{
+		max-width: 100px;
+	}
+	.site-header .phone{
+		width: 42%;
+		text-align: right;
+	}
+	.site-header .phone a,
+	.site-header .phone span,
+	.site-header .mail span{
+		font-size: 16px;
+	}
+	.site-header .mail{
+		width: 28%;
+	}
+	.porfolio .social img{
+		max-width: 25px;
+		max-height: 25px;
+	}
+	.porfolio .social li{
+		margin: 0 10px;
+	}
+	.porfolio h2{
+		font-size: 45px;
+	}
+	.porfolio .filter a{
+		font-size: 15px;
+	}
+	.wr-content-images h3{
+		font-size: 18px;
+	}
+	.wr-content-images h3:after{
+		top: 3px;
+	}
+}
+
+@media ( max-width:768px ) {
+	.time-develop .container{
+		font-size: 24px;
+	}
+	.time-develop .container span{
+		font-size: 40px;
+	}
+	.info-work .item{
+		width: 100%;
+		margin-bottom: 20px;
+		margin-right: 0;
+	}
+	.inner-page{
+		margin-bottom: 70px;
+	}
+	.inner-page .container{
+		position: static;
+	}
+	.porfolio .title,
+	.porfolio .title .social{
+		text-align: center!important;
+	}
+	.porfolio h2{
+		text-align: center;
+	}	
+	.site-header .logo{
+		width: 100%;
+	}
+	.site-header .logo a{
+		display: table!important;
+		margin: auto;
+		position: static!important;
+	}
+	.site-header .logo .portfolio-link{
+		z-index: 20;
+		margin: 25px auto 10px;
+	}	
+	.site-header{
+		padding: 20px 0;
+	}
+	.site-header .logo img{
+		max-width: 100px;
+	}
+	.site-header .phone{
+		width: auto;
+		display: table;
+		margin: auto;
+		text-align: center;
+		position: relative;
+	}
+	.site-header .phone li{
+		display: block;
+		margin: 5px 0;
+	}
+	.site-header .phone img{
+		position: absolute;
+		top: 12px;
+		left: -40px;
+	}
+	.site-header .phone a,
+	.site-header .phone span,
+	.site-header .mail span{
+		font-size: 16px;
+	}
+	.site-header .mail{
+		right: 15px;
+		bottom: 2px;
+		width: 100%;
+		text-align: center;
+		padding-top: 5px;
+		padding-right: 15px;
+	}
+	.porfolio .list li{
+		width: 100%;
+		border: 0!important;
+		border-bottom: 1px solid #fff!important;
+	}
+	.porfolio > .social {
+		padding: 80px 0 50px;
+	}	
+	.porfolio .left,
+	.porfolio .right{
+		width: 100%;
+	}
+	.porfolio .title .social{
+		text-align: left;
+		padding-top: 20px;
+	}
+	.porfolio h2 {
+		font-size: 35px;
+	}	
+}
