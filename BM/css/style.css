@@ -154,6 +154,10 @@ a{
 	font-weight: 900;
 	text-transform: uppercase;
 }
+.porfolio .title-inner{
+	font-size: 48px;
+	margin-bottom: 5px;
+}
 .porfolio .right {
 	display: inline-block;
 	vertical-align: top;
@@ -368,7 +372,311 @@ a{
 	margin: auto;
 }
 
+.inner-page.seamen{
+	background-color: transparent;
+	padding-bottom: 0;
+}
+.inner-page.seamen h3 {
+	top: 70px;
+}
+
+.info-work.seamen{
+	margin-top: -70px;
+	padding-bottom: 20px;
+}
+
+.info-work.seamen .item {
+	vertical-align: middle;
+}
+.info-work.seamen .item img{
+	max-width: 100%;
+}
+
+ 
+.seamen-filters.container{
+	max-width: 100%;
+	
+}
+.seamen-filters  h3 {
+	max-width: 1170px;
+	padding: 0 25px;
+	margin: 0 auto 30px;
+}
+.seamen-filters .popup {
+	position: absolute;
+	right: 0;
+	left: 0;
+	text-align: right;
+	max-width: 900px;
+	margin: auto;
+	top: 100px;
+}
+.seamen-filters .popup:after{
+	position: relative;
+	left: auto;
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: -190px;
+	top: -1px;
+}
+ 
+.info-work.football .item{
+	vertical-align: middle;	
+}
+.info-work.football .item:last-child{
+	text-align: center;
+	padding-right: 10%;
+}
+
+
+ 
+.gamma {
+	padding-bottom: 120px;
+}
+.gamma .container .item {
+	padding: 0;
+	vertical-align: middle;
+}
+.gamma .item:last-child {
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 10%;
+}
+.gamma h5 {
+	font-size: 18px;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.gamma table {
+	width: 100%;
+}
+.gamma td {
+	font-size: 18px;
+	color: #000;
+	vertical-align: middle;
+	padding: 15px;
+}
+.gamma td:first-child {
+	padding-left: 0;
+}
+.gamma td .color {
+  background-color: rgb(0, 69, 110);
+  width: 62px;
+  height: 62px;	
+}
+.gamma td .color.bluesky {
+	background: #00a6e8;
+}
+.gamma td .color.red {
+	background: #ed1c24;
+}
+ 
+
+.big-image {
+	margin-bottom: 70px;
+}
+.big-image img {
+	max-width: 100%;
+	display: table;
+	margin: auto;
+}
+
+.web-football{
+	padding: 50px 0 60px;
+}
+.web-football .item{
+	vertical-align: middle;
+}
+
+.info-work.football-logos{
+	padding-bottom: 30px;
+}
+.info-work.football-logos .item{
+	vertical-align: middle;
+	width: 43%;
+}
+.info-work.football-logos .item:last-child{
+	font-size: 0;
+	text-align: center;
+	width: 53%;
+}
+.info-work.football-logos img{
+	max-width: 45%;
+	display: inline-block;
+	margin: 0 2.5%;
+	vertical-align: middle;
+}
+.no-margin img {
+	margin-bottom: 0;
+}
+
+ 
+.inner-page.footbal-main{
+	margin: 180px 0 100px;
+	padding-bottom: 40px;
+}
+.inner-page.footbal-main .container {
+	top: -80px;
+	z-index: 30;
+}
+.inner-page .wr-content-images {
+	top: 0;
+}
+.inner-page.footbal-main h3 {
+	top: 0;
+}
+.inner-page.footbal-main img {
+	position: relative;
+	top: -190px;
+	margin-bottom: -190px;
+}
+
+.heelys-inner {
+	background-size: 100% 100%;
+	background-position: top center;
+	padding: 130px 0;
+	margin: -70px 0;
+}
+.heelys-inner .inner-page {
+	background-color: transparent;
+}
+.heelys-inner .inner-page:first-child .container{
+	top: 200px;
+}
+.heelys-inner .inner-page:last-child .container{
+	top: 120px;
+}
+.heelys-inner .inner-page:last-child h3{
+	color: #fff;
+}
+
+.yug-inner {
+	background-size: 100% 100%;
+	background-position: top center;
+	padding-bottom: 100px;
+}
+.yug-inner .inner-page {
+	background-color: transparent;
+	padding:0;
+}
+.yug-inner .inner-page  h3 {
+	color: #fff;
+}
+.yug-inner .inner-page:last-child  .container {
+	top: 10px;
+}
+
+
+.info-work.yug .container .item {
+	vertical-align: middle;
+}
+.info-work img {
+	max-width: 100%;
+}
+
+ 
+.prof.info-work .item:first-child{
+	width: 30%;
+	vertical-align: top;
+}
+.prof.info-work .item:last-child{
+	vertical-align: top;
+	text-align: left;
+	padding-top: 0;
+	width: 66%;
+}
+.gamma table {
+	width: 100%;
+}
+.gamma .color.brown {
+	background-color: #5a4a42;
+}
+.gamma .color.green {
+	background-color: #8dc63f;
+}
+.time-develop.prof{
+	margin-bottom: 80px;
+} 
+.info-work.prof-center .item{
+	vertical-align: middle;
+}
+ 
+.prof-icon .set{
+	margin-bottom: 70px;
+}
+.prof-icon .set h4{
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.prof-icon .set img{
+	margin: 0;
+	max-width: 100%;
+}
+.prof-icon .web{
+	padding-top: 50px;
+}
+.prof-icon .web .item:first-child{
+	width: 35%;
+}
+.prof-icon .web .item:last-child{
+	width: 61%;
+}
+
+.big-image.no-margin{
+	margin-bottom: 20px;
+}
+
+
+
+
+
 @media ( max-width:1200px ) {
+	.inner-page.footbal-main .container {
+		top: -150px!important;
+		z-index: 30;
+		position: absolute;
+	}	
+	.porfolio .title-inner{
+		font-size: 38px;
+	}
+	.gamma{
+		padding-bottom: 70px;
+	}
+	.gamma td {
+		padding: 12px 8px;
+	}	
+	.gamma td .color {
+		width: 46px;
+		height: 46px;
+	}	
+	.big-image {
+		margin-bottom: 40px;
+	}	
+	.gamma .item:last-child {
+		padding-top: 30px;
+		padding-right: 0%;
+	}
+	.info-work.football .item:last-child{
+		padding: 20px 0 0;
+	}
+	.gamma td{
+		font-size: 14px;
+	}
+	.seamen-filters .popup{
+		display: table;
+		left: auto;
+		right: 20px;
+		top: 80px;
+	}
+	.seamen-filters .popup:after{
+		position: absolute;
+		margin: 0;
+		left: 0;
+		top: 2px;
+	}
 	.site-header .logo .portfolio-link{
 		right: auto;
 		left: 120px;
@@ -415,6 +723,57 @@ a{
 }
 
 @media ( max-width:768px ) {
+	.prof.info-work {
+		padding-bottom: 30px;
+	}
+	.prof.info-work .item,
+	.prof-icon .web .item{
+		width: 100%!important;
+	}
+	.info-work.yug .container .item:last-child {
+		padding:15px 0 0;
+	}	
+	.yug-inner{
+		padding: 30px 0 50px;
+	}
+	.heelys-inner {
+		background-size: 100% 100%;
+		background-position: top center;
+		padding: 120px 0 50px;
+		margin: 0;
+	}	
+	.heelys-inner .inner-page:first-child {
+		padding: 0;
+	}
+	.inner-page.footbal-main .container{
+		top: -200px!important;
+	}
+	.inner-page.footbal-main{
+		margin-top: 210px;
+	}
+	.info-work.football-logos .item{
+		width: 100%;
+	}
+	.info-work.football-logos .item:last-child{
+		width: 100%;
+		padding: 30px 0 20px;
+	}
+	.porfolio .title-inner{
+		font-size: 28px;
+	}	
+	.inner-page.seamen h3{
+		top: 10px;
+	}
+	.seamen-filters .popup{
+		display: none;
+	}
+	.info-work.seamen .item{
+		vertical-align: top;
+		margin-bottom: 50px;
+	}
+	.info-work.seamen .item:last-child{
+		padding-left: 0;
+	}
 	.time-develop .container{
 		font-size: 24px;
 	}
