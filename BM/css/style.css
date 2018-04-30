@@ -629,11 +629,63 @@ a{
 	margin-bottom: 20px;
 }
 
+.info-work p:after {
+	min-height: inherit;
+}
+.info-work a {
+	font-size: 16px;
+	color: #3b8cb6;
+	text-decoration: underline;
+}
 
 
+.prof-main .inner-page {
+	padding: 80px 0 90px;
+	background: #eeeeee;
+	margin: 0;
+}
+.prof-inner .inner-page {
+	padding-top: 80px;
+	background: #81c02a;
+	padding-bottom: 90px;
+	margin: 0 0 120px;
+}
+.prof-inner .container {
+	position: static;
+}
+
+.vita-inner .inner-page {
+    background-color: transparent;
+}
+.vita-inner .container {
+    position: static;
+}
+.vita-inner h3 {
+    margin-bottom: 30px;
+}
+
+.inner-page.wedding-main{
+    background-color: transparent;
+}
+.inner-page .container {
+    top: 200px;
+}
+.wedding-inner .inner-page {
+    background-color: transparent;
+    padding-top: 0;
+}
+.wedding-inner .container {
+    position: static;
+}
+.wedding-inner h3 {
+    margin-bottom: 100px;
+}
 
 
 @media ( max-width:1200px ) {
+    .wedding-inner h3 {
+        margin-bottom: 60px;
+    }    
 	.inner-page.footbal-main .container {
 		top: -150px!important;
 		z-index: 30;
@@ -723,6 +775,20 @@ a{
 }
 
 @media ( max-width:768px ) {
+    .wedding-inner .inner-page{
+        padding-bottom: 30px;
+    }
+    .wedding-inner h3 {
+        margin-bottom: 40px;
+    }      
+	.prof-main .inner-page {
+		padding: 50px 0 60px;
+	}
+	.prof-inner .inner-page {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		margin: 0 0 80px;
+	}	
 	.prof.info-work {
 		padding-bottom: 30px;
 	}
