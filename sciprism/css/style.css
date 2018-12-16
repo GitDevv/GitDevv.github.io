@@ -24,7 +24,6 @@ body{
 /*	overflow-x: hidden;*/
     position: relative;
 	background-color: #edf1f6;
-	padding-top: 56px;
 } 
 *{
 	-webkit-box-sizing: border-box;
@@ -8055,6 +8054,7 @@ body .sign-modal-wr .modal{
 
 .wrapper{
     height: 100vh;
+	padding-top: 56px;    
 }
 .simplebar-scrollbar:before{
         background: #196efb; 
