@@ -1,0 +1,219 @@
+.probootstrap-section {
+    padding: 80px 0 70px;
+    position: relative;
+        background: #D6E6F2;
+}
+
+.probootstrap-section .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+ 
+.probootstrap-service-item .icon {
+    display: block;
+    font-size: 70px;
+    margin-bottom: 20px;
+    color: #1a57a5;
+}
+.icon-phone3:before {
+    content: "\e004";
+}
+.probootstrap-service-item h2 {
+    font-size: 24px;
+    color: #1a57a5;
+    line-height: 1.3;
+    margin-bottom: 30px;    
+}
+.probootstrap-service-item p {
+    margin-bottom: 10px;
+    line-height: 1.6;    
+    font-size:16px;
+}
+.probootstrap-link {
+    position: relative;
+}
+.probootstrap-service-item a {
+    -webkit-transition: .3s all;
+    transition: .3s all;
+    color: #1a57a5;
+}
+.probootstrap-link i {
+    position: relative;
+    right: 0;
+    top: .15em;
+    -webkit-transition: .3s all ease;
+    transition: .3s all ease;
+}
+ 
+.probootstrap-service-item {
+    position: relative;
+    padding: 30px 20px 5px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    background: #fff;
+    text-align: center;
+    height: 100%;
+}
+.col-md-4 {
+    width: 31%;
+}
+
+
+.probootstrap-section .col-md-4{
+    margin-bottom: 25px;
+}
+
+.bottom-s h2 {
+    text-align: center;
+    color: #1a57a5;
+    line-height: 1.45;
+    font-size: 36px;
+    margin-bottom: 15px;   
+    font-weight: 500;
+}
+.bottom-s p {
+    text-align: center;
+    color: #73767c;
+    line-height: 1.7;
+    font-size: 18px;    
+}
+
+.probootstrap-section.probootstrap-bg-light {
+    background: #D6E6F2;
+}
+.mb100 {
+    margin-bottom: 100px!important;
+}
+.probootstrap-section-heading .probootstrap-heading-2 {
+    line-height: 1.45;
+    font-size: 36px;
+        margin-bottom: 30px;
+    margin-top: 20px;
+}
+.mb100 p{
+    margin-bottom: 30px;
+    color: #73767c;
+    line-height: 1.7;
+    font-size: 18px;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+.probootstrap-list {
+    padding: 0;
+    margin: 0;
+}
+.probootstrap-list li {
+    margin: 0 0 10px;
+    padding: 0;
+    position: relative;
+    list-style: none;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    color: #73767c;
+    line-height: 1.4;
+    font-size: 16px;
+    font-family: "Open Sans",Arial,sans-serif;
+}
+.probootstrap-list li.probootstrap-check:before {
+    color: #1a57a5;
+    font-size: 16px;
+    content: "\eb91";
+    font-weight: 400;
+    position: absolute;
+    top: .3em;
+    font-family: icomoon;
+    speak: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    left: 0;
+}
+.probootstrap-form, .probootstrap-shadow, .probootstrap-testimonial:focus, .probootstrap-testimonial:hover {
+    -webkit-box-shadow: 0 20px 45px -10px rgba(0,0,0,.15);
+    box-shadow: 0 20px 45px -10px rgba(0,0,0,.15);
+}
+
+.probootstrap-section.white{
+    background: #fff;
+    padding: 70px 0 0;
+}
+.probootstrap-section-heading .probootstrap-heading {
+    font-size: 48px;
+    line-height: 1.45;
+    position: relative;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    color: #000;
+}
+.probootstrap-section-heading .probootstrap-heading:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 70px;
+    height: 2px;
+    background: #1a57a5;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.probootstrap-section .btn {
+     display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+    text-decoration: none;
+        background: #1a57a5;
+    border-radius: 0;
+    font-size: 16px;
+    padding: 15px 50px;
+    
+}
+a {
+    text-decoration: none!important;
+}
+.probootstrap-service-item img {
+    display: inline-block;
+    max-width: 120px;
+    margin-bottom: 15px;
+}
+
+@media ( max-width:992px ) {
+    .col-md-4{
+        width: 100%;
+    }
+    .row{
+        margin-left: 0!important;
+        margin-right: 0!important;
+    }
+    .probootstrap-section-heading .probootstrap-heading,
+    .mailing .h2{
+        font-size: 36px;
+    }
+    .probootstrap-section-heading .probootstrap-heading-2,
+    .bottom-s h2{
+        font-size: 30px;
+    }
+}
